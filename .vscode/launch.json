@@ -1,0 +1,116 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Preprocessing",
+            "type": "python",
+            "request": "launch",
+            "program": "preprocessing/preprocess.py",
+            "console": "integratedTerminal",
+            "args":[
+                "--config",
+                "config/config_preprocess.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "PretrainVAE",
+            "type": "python",
+            "request": "launch",
+            "program": "train_pretrainVAE.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/config_pretrainVAE.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "poem_preprocess",
+            "type": "python",
+            "request": "launch",
+            "program": "preprocessing/poem_preprocess.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/poem_preprocess.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "kornlu_preprocess",
+            "type": "python",
+            "request": "launch",
+            "program": "preprocessing/kornlu_preprocess.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/kornlu_preprocess.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "generate",
+            "type": "python",
+            "request": "launch",
+            "program": "generate.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/config_generate.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "concat",
+            "type": "python",
+            "request": "launch",
+            "program": "concat.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/config_concat.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "train_classifier",
+            "type": "python",
+            "request": "launch",
+            "program": "train_classifier.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/config_classifier.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "classify",
+            "type": "python",
+            "request": "launch",
+            "program": "classify.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/config_classify.yaml"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "train_pluginVAE",
+            "type": "python",
+            "request": "launch",
+            "program": "train_pluginVAE.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "config/config_pluginVAE.yaml"
+            ],
+            "justMyCode": true
+        }
+    ]
+}

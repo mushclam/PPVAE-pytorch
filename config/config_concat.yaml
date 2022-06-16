@@ -1,0 +1,20 @@
+data1:
+  train: 'data/KorNLI/kornli_train.pkl'
+  valid: 'data/KorNLI/kornli_valid.pkl'
+  test: 'data/KorNLI/kornli_test.pkl'
+
+data2:
+  train: 'poem_output/poem_train.pkl'
+  valid: 'poem_output/poem_valid.pkl'
+  test: 'poem_output/poem_test.pkl'
+
+output_dir: 'data/concat'
+
+token:
+  pad_token: 0
+  oov_token: 1
+  start_token: 2
+  end_token: 3
+
+max_len: 17
+max_vocab: 10000

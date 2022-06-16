@@ -1,0 +1,15 @@
+device: 'cpu'
+
+token:
+  pad_token: 0
+  oov_token: 1
+  start_token: 2
+  end_token: 3
+
+# input: '알고리즘 공부는 항상 어렵다.'
+max_len: 17
+vocab_path: 'poem_output/poem_vocab.json'
+
+pretrain:
+  path: 'checkpoints/kornli_poem_nambda30_last.pkl'
+  latent_dim: 128

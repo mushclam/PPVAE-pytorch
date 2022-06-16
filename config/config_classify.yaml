@@ -1,0 +1,20 @@
+device: 1
+
+vocab_path: 'data/concat/kornli_poem_vocab.json'
+model_path: 'classifier_output/classifier_balance.pt'
+token:
+  pad_token: 0
+  oov_token: 1
+  start_token: 2
+  end_token: 3
+
+max_len: 17
+batch_size: 256
+emb_size: 100
+
+input: False
+decl:
+  test: 'data/KorNLI/kornli_test.pkl'
+
+poem:
+  test: 'poem_output/poem_test.pkl'

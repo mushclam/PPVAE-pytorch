@@ -1,0 +1,31 @@
+device: 3
+
+token:
+  pad_token: 0
+  oov_token: 1
+  start_token: 2
+  end_token: 3
+
+# dataset depends on your need
+train_path: 'data/concat/kornli_poem_train.pkl'
+valid_path: 'data/concat/kornli_poem_valid.pkl'
+test_path: 'data/concat/kornli_poem_test.pkl'
+vocab_path: 'data/concat/kornli_poem_vocab.json'
+
+log_path: 'output/'
+log_tag: 'kornli_poem_nambda20_mu0_1_0'
+
+max_len: 17
+max_vocab: 10000
+
+# hyper-parameters
+lr: 0.0001
+mu: 0.1
+nu: 0.999
+
+emb_size: 256
+gru_dim: 150
+batch_size: 512
+latent_dim: 128
+nambda: 20
+head_num: 8

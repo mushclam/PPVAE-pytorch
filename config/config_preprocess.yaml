@@ -1,0 +1,14 @@
+token:
+  pad_token: 0
+  oov_token: 1
+  start_token: 2
+  end_token: 3
+
+max_vocab: 8900
+
+# dataset depends on your need
+train_path: 'data/sentiment.train.total'
+valid_path: 'data/sentiment.dev.total'
+test_path: 'data/sentiment.test.total'
+
+output_dir: 'data'

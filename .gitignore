@@ -1,0 +1,9 @@
+__pycache__/
+checkpoints/
+conditional_data/
+data/
+gen/
+KorNLUDatasets/
+poem_output/
+runs/
+vocab/

@@ -1,0 +1,15 @@
+token:
+  pad_token: 0
+  oov_token: 1
+  start_token: 2
+  end_token: 3
+
+# dataset depends on your need
+train_path: 'KorNLUDatasets/KorNLI/multinli.train.ko.tsv'
+valid_path: 'KorNLUDatasets/KorNLI/xnli.dev.ko.tsv'
+test_path: 'KorNLUDatasets/KorNLI/xnli.test.ko.tsv'
+
+output_dir: 'data/KorNLI'
+
+max_len: 17
+max_vocab: 10000

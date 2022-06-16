@@ -1,0 +1,17 @@
+token:
+  pad_token: 0
+  oov_token: 1
+  start_token: 2
+  end_token: 3
+
+# dataset depends on your need
+train_path: 'data/poem_train.pkl'
+valid_path: 'data/poem_valid.pkl'
+test_path: 'data/poem_test.pkl'
+vocab_path: 'data/poem_vocab.json'
+
+data_dir: 'data/poem'
+output_dir: 'poem_output/'
+
+max_len: 17
+max_vocab: 10000
